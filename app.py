@@ -14,7 +14,7 @@ def home():
 
 @app.route('/google0ad995f932cc8a01.html')
 def google_file():
-    return render_template('google0ad995f932cc8a01.html')
+    return "google-site-verification: google0ad995f932cc8a01.html"
 
 if __name__ == '__main__':
     # debug=True sayesinde JSON'ı değiştirdiğinde site otomatik yenilenir
