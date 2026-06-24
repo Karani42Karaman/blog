@@ -12,6 +12,10 @@ def home():
     portfolio_data = load_data()
     return render_template('index.html', data=portfolio_data)
 
+@app.route('/google0ad995f932cc8a01.html')
+def google_file():
+    return render_template('google0ad995f932cc8a01.html')
+
 if __name__ == '__main__':
     # debug=True sayesinde JSON'ı değiştirdiğinde site otomatik yenilenir
     app.run(debug=True, port=5000)
