@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Karani Karaman | Full Stack Software Developer & Computer Engineer",
+    "description": "Karani Karaman - Full Stack .NET Software Developer. Microservices, Kafka, CQRS, MediatR, Debezium, CloudMessageQueue ve Distributed Systems Uzmanı.",
+    "keywords": "Karani Karaman, Karani Karaman, .NET Developer, CloudMessageQueue, Debezium, Kafka CQRS, Microservices, Mini-GPT, Ubuntu Nginx"
+  },
+  "profile": {
+    "name": "Karani Karaman",
+    "title": "Full Stack Software Developer",
+    "about": "Yaklaşık 5 yıllık sektör deneyimimle .NET ekosistemi, mikroservis tabanlı mimariler, asenkron mesajlaşma ve distributed sistemler üzerinde ölçeklenebilir backend çözümleri inşa ediyorum. Geliştirdiğim projelerde Clean Architecture, CQRS, Event-Driven Design ve production-ready tasarım kalıplarını uyguluyorum.",
+    "email": "karamankarani42@gmail.com",
+    "phone": "0505 971 58 70",
+    "linkedin": "https://www.linkedin.com/in/karani-karaman-b12850191/",
+    "github": "https://github.com/Karani42Karaman",
+    "medium": "https://medium.com/@karamankarani42",
+    "youtube": "https://www.youtube.com/channel/UC7MGytdIq1BPNIK504VVWQA/videos"
+  },
+  "skills": {
+    "backend": ["ASP.NET Core", "Web API", "CQRS (MediatR)", "FluentValidation", "Clean Architecture", "Java Spring Boot"],
+    "messaging": ["Apache Kafka", "RabbitMQ", "Debezium (CDC)", "MQTT / Broker Architecture", "Telethon (Telegram API)"],
+    "database": ["MS SQL (EF Core)", "MySQL", "MongoDB", "Redis (Distributed Caching)", "ElasticSearch", "Kibana"],
+    "devops_cloud": ["Docker", "Kubernetes", "Jenkins", "Nginx Configuration", "Ubuntu Server", "AWS EC2", "Azure DevOps"],
+    "frontend_tools": ["Angular", "JavaScript", "HTML5 / CSS3", "Selenium Web Driver (Python)", "Git", "Jira"]
+  },
+  "education": [
+    {
+      "school": "Konya Teknik Üniversitesi (Yüksek Lisans)",
+      "date": "01/2025 - Halen",
+      "detail": "Bilgisayar Mühendisliği yüksek lisans programı kapsamında FastDDS ile dağıtık sistem haberleşme modelleri, gerçek zamanlı veri iletimi ve yüksek performanslı middleware tasarımları üzerine akademik araştırmalar yürütüyorum."
+    },
+    {
+      "school": "Sivas Cumhuriyet Üniversitesi (Lisans)",
+      "date": "10/2018 - 10/2022",
+      "detail": "Bilgisayar Mühendisliği Bölümü'nden 3.06 GANO ile mezun oldum."
+    }
+  ],
+  "experiences": [
+    {
+      "date": "02/2026 - 04/2026",
+      "company": "Uris Tech",
+      "location": "Bursa, Türkiye (Remote)",
+      "role": "Full Stack Software Developer",
+      "desc": "2 aylık çalışma süresi boyunca araç filo takibi, servis taşımacılığı yönetimi ve ileri düzey rota optimizasyon süreçlerine yönelik kararlı ve güçlü backend çözümleri üreten mühendislik ekibinde görev aldım."
+    },
+    {
+      "date": "08/2022 - 03/2025",
+      "company": "REA Technology (Borusan Otomotiv / BMW Türkiye)",
+      "location": "İstanbul, Türkiye",
+      "role": "Full Stack Software Developer",
+      "desc": "Mini Prime ve MyBMW gibi yüksek trafikli dijital ürünlerin backend süreçlerine katkıda bulundum. Güvenli mikroservis haberleşmesi, API tasarımı, payment entegrasyonları, event-driven (Kafka/RabbitMQ) iş akışları ve DevOps süreçlerine uyumlu containerized deployment mimarilerinden sorumlu olarak çalıştım."
+    },
+    {
+      "date": "05/2022 - 06/2022",
+      "company": "Efectura",
+      "location": "Belarus (Remote)",
+      "role": "Software Developer",
+      "desc": ".NET ve MS SQL kullanarak veri odaklı backend sistemlerinin geliştirilmesi ve veri yönetimi altyapılarının iyileştirilmesi süreçlerinde uzaktan destek sağladım."
+    },
+    {
+      "date": "11/2019 - 11/2021",
+      "company": "Detay Teknoloji",
+      "location": "Sivas, Türkiye",
+      "role": "Junior Software Developer",
+      "desc": "İki yılı aşkın bir süre boyunca IoT ve iç mekan konumlandırma odaklı çözümler geliştirdim. Sürekli cihaz veri akışlarını (data streams) işleyen, proxy sunucular üzerinden gelen sinyalleri anlamlandıran ve gerçek zamanlı operasyonel modüllere veri sağlayan servisler kurguladım."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Prime (Borusan Otomotiv CV Projesi)",
+      "links": ["https://mybmw.bmw.com.tr/bmw-prime/", "https://miniprime.mini.com.tr/"],
+      "details": [
+        "MasterPass Kart Ödeme Sistemi Entegrasyonu",
+        "Iyzico Ödeme Sistemi Altyapısı Geliştirilmesi",
+        "Abonelik Yönetim Sistemi (Subscriber Management System) Mimarisi"
+      ]
+    },
+    {
+      "title": "MyBMW Online Service (Borusan Otomotiv CV Projesi)",
+      "links": ["https://mybmw.bmw.com.tr/", "https://onlineservice.mini.com.tr/"],
+      "details": [
+        "Araç Servis Randevu Sistemi (Vehicle Service Appointment System)",
+        "Payzee Ödeme Sistemi Entegrasyonu ve Yönetimi",
+        "Garanti Satış Sistemi ve Araç Bilgi Sistemi Modülleri"
+      ]
+    },
+    {
+      "title": "Indoor Location (Detay Teknoloji CV Projesi)",
+      "links": [],
+      "details": [
+        "İstanbul Havalimanı (IGA) ve Sabiha Gökçen Havalimanı bünyesinde kullanılan iç mekan konumlandırma altyapısı.",
+        "Gateways üzerinden akan ham BLE Beacon verilerini MQTT/RabbitMQ mimarisiyle işleyip ElasticSearch ve MongoDB üzerinde gerçek zamanlı kullanıma sunan veri boru hattı.",
+        "Sabiha Gökçen fazında KNN tabanlı konumlandırma yaklaşımıyla lokasyon doğruluğunu optimize ettim."
+      ]
+    },
+    {
+      "title": "IoT Platform & PDKS Systems (Detay Teknoloji CV Projesi)",
+      "links": [],
+      "details": [
+        "IoT cihazlarından gelen verileri yorumlayan ve son kullanıcıya sunan asenkron broker modülleri.",
+        "Turnikelerden akan personel geçiş verilerini Apache Kafka ve Debezium kullanarak .NET Windows Servislerine gerçek zamanlı aktaran PDKS mimarisi."
+      ]
+    },
+    {
+      "title": "MDM_ms (Efectura CV Projesi)",
+      "links": [],
+      "details": [
+        "Merkezi veri yönetimi (Data Management) gereksinimleri için .NET Framework 5.2 ve MS SQL kullanılarak geliştirilmiş veri yönetim uygulaması."
+      ]
+    },
+    {
+      "title": "reactive-dotnet-cqrs-debezium-kafka (GitHub)",
+      "links": ["https://github.com/Karani42Karaman/reactive-dotnet-cqrs-debezium-kafka"],
+      "details": [
+        "Debezium kullanarak veri tabanındaki değişiklikleri anlık yakalayan Change Data Capture (CDC) mimarisi.",
+        "Apache Kafka event pipeline'ı üzerinden beslenen ve asenkron veri tutarlılığı sağlayan reaktif .NET CQRS altyapısı.",
+        "Yüksek performanslı, event-driven mikroservis haberleşme modeli."
+      ]
+    },
+    {
+      "title": "CloudMessageQueue (GitHub)",
+      "links": ["https://github.com/Karani42Karaman/CloudMessageQueue"],
+      "details": [
+        "Java ekosisteminde geliştirilmiş, bulut tabanlı ve dağıtık mimarilere uygun özel bir mesaj kuyruğu (Message Queue) tasarımı.",
+        "Asenkron veri iletimi, kuyruk yönetimi, tüketici (consumer) dengelenmesi ve hata toleransı mekanizmaları."
+      ]
+    },
+    {
+      "title": "order-microservices (GitHub)",
+      "links": ["https://github.com/Karani42Karaman/order-microservices"],
+      "details": [
+        ".NET mimarisinde uçtan uca kurgulanmış sipariş yönetim odaklı mikroservis ekosistemi.",
+        "Servisler arası gevşek bağlı (loosely coupled) iletişim tasarımı, izole veri tabanları yönetimi ve resilience kalıplarının uygulanması."
+      ]
+    },
+    {
+      "title": "SentimentAnalysis (GitHub)",
+      "links": ["https://github.com/Karani42Karaman/SentimentAnalysis"],
+      "details": [
+        "Clean Architecture prensipleriyle (Domain, Application, Infrastructure, WebAPI) tasarlanmış C# backend projesi.",
+        "MediatR ile CQRS deseni entegrasyonu ve Pipeline Behaviors üzerinden FluentValidation yönetimi."
+      ]
+    },
+    {
+      "title": "mini-gpt (GitHub)",
+      "links": ["https://github.com/Karani42Karaman/mini-gpt"],
+      "details": [
+        "JavaScript mimarisi kullanılarak geliştirilmiş, dil modelleri veya yapay zeka entegrasyon süreçlerinin esnek yönetimini simüle eden/sağlayan özelleştirilmiş yazılım altyapısı."
+      ]
+    },
+    {
+      "title": "ubuntu-nginx (GitHub)",
+      "links": ["https://github.com/Karani42Karaman/ubuntu-nginx"],
+      "details": [
+        "Sivas Cumhuriyet Üniversitesi Bilgisayar Mühendisliği bünyesindeki Bulut Bilişim (BIL4214) dersi için geliştirilmiş altyapı projesi.",
+        "Ubuntu Linux sunucu ortamlarında Nginx konfigürasyonu, reverse proxy ayarları ve statik/dinamik web deployment süreçlerinin otomasyonu."
+      ]
+    }
+  ]
+}

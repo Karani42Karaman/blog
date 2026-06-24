@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.seo.title }}</title>
+    <meta name="description" content="{{ data.seo.description }}">
+    <meta name="keywords" content="{{ data.seo.keywords }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'Fira Code', monospace; }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-gray-200 selection:bg-cyan-500 selection:text-black">
+
+    <!-- HERO -->
+    <header class="min-h-screen flex flex-col justify-center items-center px-6 relative border-b border-gray-800">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-3xl text-center z-10">
+            <p class="code-font text-cyan-400 text-sm mb-4">⚡ dotnet run --project KaraniKaraman.Official</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight break-words">{{ data.profile.name }}</h1>
+            <h2 class="text-xl md:text-2xl text-gray-400 font-light mb-8">{{ data.profile.title }}</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-sm md:text-base leading-relaxed">{{ data.profile.about }}</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 code-font text-sm">
+                <a href="#projects" class="px-6 py-3 bg-cyan-600 text-white font-semibold rounded-lg hover:bg-cyan-500 transition shadow-lg shadow-cyan-600/20">view_portfolio()</a>
+                <a href="{{ data.profile.github }}" target="_blank" class="px-6 py-3 bg-gray-900 text-gray-300 font-semibold rounded-lg hover:bg-gray-800 transition border border-gray-800">github_profile ↗</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6">
+        
+        <!-- EĞİTİM -->
+        <section class="py-20 grid md:grid-cols-3 gap-12 border-b border-gray-800">
+            <div class="md:col-span-1 border-l-2 border-cyan-500/30 pl-4">
+                <h2 class="code-font text-cyan-400 text-xs uppercase tracking-wider mb-2">01 // academic_background</h2>
+                <h3 class="text-2xl font-bold text-white">Eğitim & Akademi</h3>
+            </div>
+            <div class="md:col-span-2 space-y-4">
+                {% for edu in data.education %}
+                <div class="bg-gray-900/40 border border-gray-800 p-5 rounded-xl">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <h4 class="text-white font-semibold text-base">{{ edu.school }}</h4>
+                        <span class="text-xs code-font text-gray-500">{{ edu.date }}</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2 leading-relaxed">{{ edu.detail }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- YETENEKLER -->
+        <section class="py-20 border-b border-gray-800">
+            <div class="mb-12">
+                <h2 class="code-font text-cyan-400 text-xs uppercase tracking-wider mb-2">02 // tech_stack</h2>
+                <h3 class="text-3xl font-bold text-white">Yetenek & Mimari Havuz</h3>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-xs code-font">
+                <div class="p-5 bg-gray-900/20 rounded-xl border border-gray-800/80">
+                    <span class="text-cyan-400 block font-semibold text-sm mb-3"># Backend Architecture</span>
+                    <p class="text-gray-400 leading-relaxed">{{ data.skills.backend | join(', ') }}</p>
+                </div>
+                <div class="p-5 bg-gray-900/20 rounded-xl border border-gray-800/80">
+                    <span class="text-cyan-400 block font-semibold text-sm mb-3"># Async Messaging & Bots</span>
+                    <p class="text-gray-400 leading-relaxed">{{ data.skills.messaging | join(', ') }}</p>
+                </div>
+                <div class="p-5 bg-gray-900/20 rounded-xl border border-gray-800/80">
+                    <span class="text-cyan-400 block font-semibold text-sm mb-3"># Databases & Cache</span>
+                    <p class="text-gray-400 leading-relaxed">{{ data.skills.database | join(', ') }}</p>
+                </div>
+                <div class="p-5 bg-gray-900/20 rounded-xl border border-gray-800/80">
+                    <span class="text-cyan-400 block font-semibold text-sm mb-3"># DevOps & Deployment</span>
+                    <p class="text-gray-400 leading-relaxed">{{ data.skills.devops_cloud | join(', ') }}</p>
+                </div>
+                <div class="p-5 bg-gray-900/20 rounded-xl border border-gray-800/80 md:col-span-2">
+                    <span class="text-cyan-400 block font-semibold text-sm mb-3"># Automation, Frontend & Logging</span>
+                    <p class="text-gray-400 leading-relaxed">{{ data.skills.frontend_tools | join(', ') }}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DENEYİMLER -->
+        <section class="py-20 border-b border-gray-800">
+            <div class="mb-16">
+                <h2 class="code-font text-cyan-400 text-xs uppercase tracking-wider mb-2">03 // production_experience</h2>
+                <h3 class="text-3xl font-bold text-white">Sektörel Tecrübe</h3>
+            </div>
+            <div class="space-y-8">
+                {% for exp in data.experiences %}
+                <article class="p-6 bg-gray-900/10 rounded-xl border border-gray-800/60 hover:border-gray-700 transition grid md:grid-cols-4 gap-6">
+                    <div class="md:col-span-1">
+                        <span class="text-gray-500 code-font text-xs block mb-1">{{ exp.date }}</span>
+                        <h4 class="text-white font-bold text-lg">{{ exp.company }}</h4>
+                        <span class="text-xs text-cyan-400 code-font block mt-0.5">{{ exp.role }}</span>
+                        <span class="text-xs text-gray-600 block mt-1 font-light">{{ exp.location }}</span>
+                    </div>
+                    <div class="md:col-span-3">
+                        <p class="text-sm text-gray-400 leading-relaxed">{{ exp.desc }}</p>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- PROJELER -->
+        <section id="projects" class="py-20">
+            <div class="mb-16">
+                <h2 class="code-font text-cyan-400 text-xs uppercase tracking-wider mb-2">04 // portfolio_hierarchy</h2>
+                <h3 class="text-3xl font-bold text-white">Projeler (Kurumsal & Pinned GitHub Repoları)</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {% for proj in data.projects %}
+                <div class="p-6 bg-gray-900/30 rounded-xl border border-gray-800 flex flex-col justify-between hover:bg-gray-900/40 transition">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3 border-b border-gray-800 pb-2">
+                            <h4 class="text-white font-bold text-sm tracking-tight break-all code-font">{{ proj.title }}</h4>
+                            {% if "GitHub" in proj.title %}
+                            <span class="px-2 py-0.5 text-[10px] code-font rounded bg-purple-900/50 text-purple-300 border border-purple-700/50 shrink-0">GitHub</span>
+                            {% else %}
+                            <span class="px-2 py-0.5 text-[10px] code-font rounded bg-cyan-900/50 text-cyan-300 border border-cyan-700/50 shrink-0">CV</span>
+                            {% endif %}
+                        </div>
+                        <ul class="space-y-2 text-xs text-gray-400 list-disc list-inside mb-4 leading-relaxed">
+                            {% for detail in proj.details %}
+                            <li>{{ detail }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% if proj.links %}
+                    <div class="pt-2 border-t border-gray-900/60 flex flex-wrap gap-3">
+                        {% for link in proj.links %}
+                        <a href="{{ link }}" target="_blank" class="text-xs code-font text-cyan-400 hover:text-cyan-300 transition">repository_uri↗</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-gray-900 bg-black/40 text-center px-6 code-font text-xs text-gray-500">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 // {{ data.profile.name }} // Tel: {{ data.profile.phone }}</p>
+            <div class="flex flex-wrap justify-center gap-6 text-gray-400">
+                <a href="{{ data.profile.linkedin }}" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
+                <a href="{{ data.profile.github }}" target="_blank" class="hover:text-cyan-400">GitHub</a>
+                <a href="{{ data.profile.medium }}" target="_blank" class="hover:text-cyan-400">Medium</a>
+                <a href="{{ data.profile.youtube }}" target="_blank" class="hover:text-cyan-400">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
